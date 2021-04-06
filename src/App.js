@@ -1,29 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <!--Link to CSS file-->
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/svg+xml" href="id-card-regular.svg">
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+import './style.css';
+
+function App() {
+  return (
     <body>
-        <!--JS call-->
-        <script src="script.js"></script>
+      <header>
+          <div id="head-content">
+              <h1>Csaba Darazs</h1>
+              <a class="button" href="Csaba Darazs CV.pdf" target="_blank">View Resume</a>
+          </div>
+          <div id="overlay"></div>
+      </header>
 
-        <!--Title-->
-        <header>
-            <div id="head-content">
-                <h1>Csaba Darazs</h1>
-                <a class="button" href="Csaba Darazs CV.pdf" target="_blank">View Resume</a>
-            </div>
-            <div id="overlay"></div>
-        </header>
-
-        <!--Main content-->
+      {/* <!--Main content--> */}
         <main>
 
-            <!--About me section-->
+            {/* <!--About me section--> */}
             <div id="aboutme">
                 <h2>About me</h2>
                 <div id="abouttext">
@@ -33,15 +24,15 @@
                 </div>        
             </div>
 
-            <!--Project section-->
+            {/* <!--Project section--> */}
             <div id="proj">
                 <h2>Projects</h2>
                 <ul id="repo-list"></ul>
             </div>
 
-            <!--Skills & Tools-->
+            {/* <!--Skills & Tools--> */}
             <div id="skill-tool">
-                <!--Skills section-->
+                {/* <!--Skills section--> */}
                 <div id="skills">
                     <h2>Skills</h2>
                     <ul id="skills-list">
@@ -58,7 +49,7 @@
                     </ul>
                 </div>
 
-                <!--Tools section-->
+                {/* <!--Tools section--> */}
                 <div id="tools">
                     <h2>Tools</h2>
                     <ul id="skills-list">
@@ -76,4 +67,7 @@
 
         </main>
     </body>
-</html>
+  );
+}
+
+export default App;
