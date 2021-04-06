@@ -1,4 +1,6 @@
 import './style.css';
+// import Album from './Album';
+import Projects from './Projects';
 
 function App() {
   return (
@@ -27,7 +29,8 @@ function App() {
             {/* <!--Project section--> */}
             <div id="proj">
                 <h2>Projects</h2>
-                <ul id="repo-list"></ul>
+                {/* <ul id="repo-list"></ul> */}
+                <Projects />
             </div>
 
             {/* <!--Skills & Tools--> */}
@@ -66,6 +69,8 @@ function App() {
             </div>
 
         </main>
+
+        {/* <Album /> */}
     </body>
   );
 }
